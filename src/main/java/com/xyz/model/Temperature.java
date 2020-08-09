@@ -4,56 +4,41 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Temperature {
-	 private String cod;
-	 private float message;
-	 private float cnt;
-	 List < ListProp > list;
-	 
-	 public List<ListProp> getList() {
+    private City city;
+    private String cod;
+    private double message;
+    private int cnt;
+    private List<ListProp> list;
+    
+	public City getCity() {
+		return city;
+	}
+	public void setCity(City city) {
+		this.city = city;
+	}
+	public String getCod() {
+		return cod;
+	}
+	public void setCod(String cod) {
+		this.cod = cod;
+	}
+	public double getMessage() {
+		return message;
+	}
+	public void setMessage(double message) {
+		this.message = message;
+	}
+	public int getCnt() {
+		return cnt;
+	}
+	public void setCnt(int cnt) {
+		this.cnt = cnt;
+	}
+	public List<ListProp> getList() {
 		return list;
 	}
-
 	public void setList(List<ListProp> list) {
 		this.list = list;
 	}
-
-	City CityObject;
-
-
-	 // Getter Methods 
-
-	 public String getCod() {
-	  return cod;
-	 }
-
-	 public float getMessage() {
-	  return message;
-	 }
-
-	 public float getCnt() {
-	  return cnt;
-	 }
-
-	 public City getCity() {
-	  return CityObject;
-	 }
-
-	 // Setter Methods 
-
-	 public void setCod(String cod) {
-	  this.cod = cod;
-	 }
-
-	 public void setMessage(float message) {
-	  this.message = message;
-	 }
-
-	 public void setCnt(float cnt) {
-	  this.cnt = cnt;
-	 }
-
-	 public void setCity(City cityObject) {
-	  this.CityObject = cityObject;
-	 }
-	}
+}
 	

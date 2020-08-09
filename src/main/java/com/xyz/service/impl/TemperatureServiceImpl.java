@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.xyz.model.Temperature;
+import com.xyz.model.UITemp;
 import com.xyz.service.TemperatureService;
 import com.xyz.service.helper.TemperatureServiceHelper;
 
@@ -12,7 +13,7 @@ import com.xyz.service.helper.TemperatureServiceHelper;
 public class TemperatureServiceImpl implements TemperatureService {
 
 	@Override
-	public Temperature getTemperature(String city) {
+	public  List<UITemp> getTemperature(String city) {
 		return TemperatureServiceHelper.getTemperature(city);
 	}
 
